@@ -60,7 +60,7 @@ MODEL:
       ste: true
       VALUES:
         ZCR:
-          threshold: 0.08
+          threshold: 0.10
           replace_value: 0.0
           operator: ">="
           normalize: true

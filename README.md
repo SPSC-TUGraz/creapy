@@ -157,7 +157,7 @@ A detailed description on the changeable parameters is given in the following ta
 |`block_size`| Classification blocksize in seconds. Smaller blocks are computationally more expensive but achieve a better time resolution. |$0.04$|
 |`hop_size`|Classification hopsize in seconds. Should be in the range of $\frac{1}{4}\texttt{block\_size}\leq\texttt{hop\_size}\leq\frac{1}{2}\texttt{block\_size}$.|$0.01$|
 |`creak_threshold`|Probability-threshold of the classifier where creak is classified. Can be a decimal value between 0 and 1. If you get too many false positives try increasing this value. If a lot of creaky voice gets missed try decreasing it.|$0.75$|
-|`zcr_threshold`|Threshold for the zero-crossing-rate pre-elimination feature. Blocks with a $\text{zcr}\geq\text{zcr\_threshold}$ get eliminated. For female speakers we achieved better results with a higher value ranging around 0.08-0.15. For male speakers a value around 0.08 will yield good results. **Note:** This is highly speaker dependent. |$0.08$|
+|`zcr_threshold`|Threshold for the zero-crossing-rate pre-elimination feature. Blocks with a $\text{zcr}\geq\text{zcr\_threshold}$ get eliminated. For female speakers we achieved better results with a higher value ranging around 0.10-0.18. For male speakers a value around 0.10-0.15 will yield good results. **Note:** This is highly speaker dependent. |$0.10$|
 |`ste_threshold`|Threshold for the short-term-energy pre-elimination feature. This value does not normally need to be changed. It mostly eliminiates blocks of silence or noise. |$1\cdot10^{-5}$|
 
 You can change these parameters in the `config.yaml` file itself or by using the function `set_config`, e.g.

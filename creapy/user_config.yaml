@@ -12,5 +12,5 @@ verbose: true
 block_size: 0.040 # seconds
 hop_size: 0.010 # in seconds
 creak_threshold: 0.75
-zcr_threshold: 0.08
+zcr_threshold: 0.10
 ste_threshold: 0.00001
