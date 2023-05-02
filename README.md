@@ -48,11 +48,11 @@ Until then, you may clone the repository from git.
 
 Before cloning you should navigate to your desired directory in the terminal like `C:/Users/myusername/<path_where_repo_will_be_cloned_into>`. With the following command you can clone the repository either with ssh
 ```bash
-git clone git@git.spsc.tugraz.at:troeck/ti-project-creak.git
+git clone git@gitlab.tugraz.at:speech/creapy.git
 ```
 or html 
 ```bash
-git clone https://git.spsc.tugraz.at/troeck/ti-project-creak.git
+git clone https://gitlab.tugraz.at/speech/creapy.git
 ```
 
 After cloning, a new folder should be present: `C:/Users/myusername/<path_to_creapy_repository>`.
