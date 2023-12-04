@@ -140,7 +140,7 @@ def intervals_to_textgrid(intervals: list[tgt.core.Interval],
     textgrid.add_tier(interval_tier)
     
 
-    tgt.io.write_to_file(textgrid, result_path)
+    tgt.io.write_to_file(textgrid, result_path, encoding="utf-8")
     if verbose:
         print(f"Wrote textgrid at {Path(result_path).resolve()}")
 
